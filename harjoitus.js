@@ -1,8 +1,14 @@
-const summa = (p1, p2) => {
-    console.log(p1)
-    console.log(p2)
-    return p1 + p2
-}
-
-const vastaus = summa(1, 5)
-console.log(vastaus)
+const arto = {
+    nimi: 'Arto Hellas',
+    tervehdi: function () {
+      console.log('hello, my name is', this.nimi)
+    },
+    laskeSumma: function (a, b) {
+      console.log(a + b)
+    }
+  }
+  
+  arto.laskeSumma(1, 4)   // tulostuu 5
+  
+  const viiteSummaan = arto.laskeSumma
+  viiteSummaan(10, 15)   // tulostuu 25
