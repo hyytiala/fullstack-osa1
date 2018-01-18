@@ -5,6 +5,7 @@ class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
+            
             vasen: 0,
             oikea: 0,
             kaikki: []
